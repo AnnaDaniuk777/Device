@@ -1,11 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document 1</title>
+    <title>Онлайн-магазин "Девайс"</title>
 </head>
+
 <body>
-    <main></main>
+    <header class="main-header">
+        <nav class="navigation">
+            <a class="navigation-logo" href="index.html">
+                <img src="images/logo-header.svg" width="145" height="36" alt="Логотип интернет-магазина Девайс">
+            </a>
+            <form class="site-navigation" action="https://echo.htmlacademy.ru/" method="get">
+                <label class="visually-hidden" for="navigation-search">Поиск по сайту</label>
+                <input class="field" id="navigation-search" placeholder="Поиск по сайту" type="text" name="search">
+                <button class="button" type="button">
+                    <span class="search-button">Найти</span>
+                </button>
+            </form>
+            <ul class="navigation-user">
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">Войти</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">Сравнить</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#"><span class="basket-quantity">2</span>Корзина</a>
+                </li>
+            </ul>
+            <ul class="navigation-list navigation-catalog">
+                <li class="catalog-item">
+                    <span class="catalog-range">Каталог товаров</span>
+                    <a class="visually-hidden" href="#">Показать список товаров</a>
+                </li>
+                <li class="catalog-item">
+                    <a class="navigation-link" href="#">Доставка</a>
+                </li>
+                <li class="catalog-item">
+                    <a class="navigation-link" href="#">Гарантия</a>
+                </li>
+                <li class="catalog-item">
+                    <a class="navigation-link" href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-index">
+        <section class="hero">
+            <h1 class="visually-hidden">Лидеры продаж</h1>
+            <div class="slider-container">
+                <div class="slider">
+                    <img src="images/slider-1.png" width="560" height="560" alt="Квадрокоптер">
+                </div>
+                <button class="slider-button previous-button" type="button"><span class="visually-hidden">Посмотреть предыдущий слайд</span></button>
+                <button class="slider-button next-button" type="button"><span class="visually-hidden">Посмотреть следующий слайд</span></button>
+            </div>
+            <div class="catalog-features">
+                <p class="item-advantage">Порхает как бабочка, жалит как пчела!</p>
+                <p class="item-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                <a class="button more-button" href="#">Подробнее</a>
+                <table class="product-specification">
+                    <tr>
+                        <td class="length">800 м</td>
+                        <th class="feature">Дальность полета</th>
+                    </tr>
+                    <tr>
+                        <td class="length">50 м</td>
+                        <th class="feature">Радиус поражения</th>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
 </body>
+
 </html>
