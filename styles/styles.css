@@ -47,7 +47,12 @@ body {
 }
 
 .wrapper {
-  padding: 0 140px;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.main-header {
+  padding: 5px 60px 0 60px;
 }
 
 .navigation {
