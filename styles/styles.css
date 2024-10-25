@@ -53,8 +53,132 @@ body {
 
 .main-header {
   padding: 5px 60px 0 60px;
+  background-image: linear-gradient(#ffffff 15%, #ffe17f 15%);
 }
 
 .navigation {
+  display: flex;
+  width: 1040px;
+  position: relative;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: #000000;
+  margin: 0;
+  display: inline-block;
+}
+
+.navigation-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navigation-wrapper {
+  margin-top: 66px;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 26px;
+}
+
+.site-navigation {
+  display: flex;
+  max-width: 517px;
+}
+
+.field {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  margin: 0;
+  background-color: #ffe17f;
+  padding-left: 48px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid #000000;
+  width: 310px;
+  font: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.button {
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  background-color: #ffe17f;
+  font-family: "Raleway", "Arial, sans-serif";
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.navigation-button {
+  font-family: "Rubik", "Arial", sans-serif;
+  color: #000000;
+  min-width: 160px;
+  padding: 10px 10px;
+  background-color: #ffe17f;
+  font-family: inherit;
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 16px;
+  line-height: 20px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: 2px solid #000000;
+  border-left: none;
+}
+
+.navigation-user {
+  gap: 26px;
+  align-items: center;
+  width: 497px;
+}
+
+.user-link {
+  width: 231px;
+}
+
+.cart-link {
+  width: 99px;
+  position: relative;
+}
+
+.navigation-icon {
+  margin-right: 9px;
+}
+
+.cart-quantity {
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+  padding: 2px 7px;
+  box-sizing: border-box;
+  display: inline-block;
+  position: absolute;
+  left:-18px;
+  top: 15%;
+}
+
+.cart-item {
+  margin-left: auto;
+}
+
+.catalog-container {
   display: flex;
 }
