@@ -69,6 +69,10 @@ body {
   display: inline-block;
 }
 
+.navigation-catalog .navigation-link {
+  padding: 15px 0;
+}
+
 .navigation-list {
   list-style-type: none;
   padding: 0;
@@ -112,6 +116,8 @@ body {
 }
 
 .button {
+  display: inline-block;
+  box-siZing: border-box;
   text-align: center;
   cursor: pointer;
   border: none;
@@ -119,9 +125,10 @@ body {
   font-family: "Raleway", "Arial, sans-serif";
   font-size: 18px;
   line-height: 21px;
+  padding: 0;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 .navigation-button {
@@ -181,4 +188,80 @@ body {
 
 .catalog-container {
   display: flex;
+}
+
+.navigation-catalog {
+  margin-left: auto;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  max-width: 471px;
+}
+
+.catalog-item:first-child {
+  margin-right: 47px;
+}
+
+.catalog-item:last-child {
+  margin-left: 45px;
+}
+
+.catalog-icon-button {
+  border: 2px solid #000000;
+  opacity: 0.3;
+  border-radius: 50%;
+  padding: 17px 17px;
+  margin-left: 10px;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.catalog-features {
+  max-width: 560px;
+  padding-top: 105px;
+  padding-bottom: 35px;
+}
+
+.slider-image {
+  display: inline-block;
+}
+
+.item-advantage {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.item-description {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.more-button {
+  width: 220px;
+  padding: 10px 5px;
+  text-decoration: none;background-image: linear-gradient(#ffffff 40%, #ffe17f 40%, #ffe17f 58%, #ffffff 58%);
+}
+
+.description {
+  color: #000000;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.definition {
+  font-weight: inherit;
+}
+
+.slider-button {
+  background-color: transparent;
 }

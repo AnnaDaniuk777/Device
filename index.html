@@ -54,7 +54,13 @@
             </ul>
           </div>
           <div class="catalog-container">
-            <button class="button catalog-button" type="button">Каталог товаров</button>
+            <button class="button" type="button">Каталог товаров</button>
+            <button class="button wide-catalog" type="button">
+              <span class="visually-hidden">Показать каталог</span>
+              <svg class="catalog-icon-button" width="16" height="16" viewBox="0 0 16 16" fill="black"
+                fill-opacity="0.3" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" />
+              </svg></button>
             <ul class="navigation-list navigation-catalog">
               <li class="catalog-item">
                 <a class="navigation-link" href="#">Доставка</a>
@@ -74,29 +80,40 @@
       <section class="hero">
         <h1 class="visually-hidden">Лидеры продаж</h1>
         <div class="slider-container">
-          <img src="images/slider-1.png" width="560" height="560" alt="Квадрокоптер">
+          <div class="slider-product-image">
+            <img class="slider-image" src="images/slider-1.png" width="560" height="560" alt="Квадрокоптер">
+          </div>
+          <div class="catalog-features">
+            <p class="item-advantage">Порхает как бабочка, жалит как пчела!</p>
+            <p class="item-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+              замаскированным под стандартную камеру.</p>
+            <a class="button more-button" href="#">Подробнее</a>
+            <table class="product-specification">
+              <tr>
+                <td class="description">800 м</td>
+                <th class="definition">Дальность полета</th>
+              </tr>
+              <tr>
+                <td class="description">50 м</td>
+                <th class="definition">Радиус поражения</th>
+              </tr>
+            </table>
+          </div>
         </div>
-
-        <button class="slider-button previous-button" type="button"><span class="visually-hidden">Посмотреть
-            предыдущий слайд</span></button>
-        <button class="slider-button next-button" type="button"><span class="visually-hidden">Посмотреть
-            следующий слайд</span></button>
-
-        <div class="catalog-features">
-          <p class="item-advantage">Порхает как бабочка, жалит как пчела!</p>
-          <p class="item-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-            замаскированным под стандартную камеру.</p>
-          <a class="button more-button" href="#">Подробнее</a>
-          <table class="product-specification">
-            <tr>
-              <td class="description">800 м</td>
-              <th class="definition">Дальность полета</th>
-            </tr>
-            <tr>
-              <td class="description">50 м</td>
-              <th class="definition">Радиус поражения</th>
-            </tr>
-          </table>
+        <div class="slider-button-container">
+          <button class="button slider-button previous-button" type="button">
+            <svg width="20" height="60" viewBox="0 0 20 60" fill="black" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z" />
+            </svg>
+            <span class="visually-hidden">Посмотреть
+              предыдущий слайд</span></button>
+          <button class="button slider-button next-button" type="button">
+            <svg width="20" height="60" viewBox="0 0 20 60" fill="black" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z" />
+            </svg>
+            <span class="visually-hidden">Посмотреть
+              следующий слайд</span></button>
         </div>
         <ol class="slider-division">
           <li class="slider-item">
