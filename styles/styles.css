@@ -229,7 +229,7 @@ body {
 }
 
 .slider-image {
-  display: inline-block;
+  display: block;
 }
 
 .item-advantage {
@@ -249,7 +249,9 @@ body {
 .more-button {
   width: 220px;
   padding: 10px 5px;
-  text-decoration: none;background-image: linear-gradient(#ffffff 40%, #ffe17f 40%, #ffe17f 58%, #ffffff 58%);
+  margin-bottom: 50px;
+  text-decoration: none;
+  background-image: linear-gradient(#ffffff 40%, #ffe17f 40%, #ffe17f 58%, #ffffff 58%);
 }
 
 .description {
@@ -264,4 +266,82 @@ body {
 
 .slider-button {
   background-color: transparent;
+}
+
+.slider-division {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 70px;
+}
+
+.slider-navigation {
+  margin-right: 20px;
+}
+
+.slider-division-button {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.current-slider-button {
+  background-color: #000000;
+}
+
+.slider-product-image {
+  position: relative;
+}
+
+.slider-button-container {
+  position: absolute;
+  top: 66%;
+  display: flex;
+  justify-content: space-between;
+  width: 530px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffe17f;
+}
+
+.active-catalog-link {
+  align-items: end;
+}
+
+.catalog-product {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.product-item {
+  display: grid;
+  grid-template-rows: 160px 60px;
+  row-gap: 32px;
 }
