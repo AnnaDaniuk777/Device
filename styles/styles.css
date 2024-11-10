@@ -22,6 +22,10 @@
   font-display: swap;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Rubik", "Arial", sans-serif;
   font-size: 18px;
@@ -116,7 +120,7 @@ body {
 }
 
 .button {
-  display: inline-block;
+  display: block;
   box-siZing: border-box;
   text-align: center;
   cursor: pointer;
@@ -128,7 +132,7 @@ body {
   padding: 0;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 0.2em;
 }
 
 .navigation-button {
@@ -344,4 +348,236 @@ body {
   display: grid;
   grid-template-rows: 160px 60px;
   row-gap: 32px;
+}
+
+.range-of-products {
+  margin-bottom: 70px;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 140px 72px 140px;
+  background-image: linear-gradient(#ffffff 102px, #f0f0f0 102px, #f0f0f0 289px);
+}
+
+.services {
+  margin-bottom: 70px;
+}
+
+.services-wrapper {
+  max-width: 1160px;
+  display: flex;
+}
+
+.tabs-list,
+.services-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tabs-content-wrapper {
+  width: 287px;
+  padding-top: 64px;
+  padding-bottom: 65px;
+  border-right: 7px solid #000000;
+}
+
+.tabs-description-wrapper {
+  position: relative;
+  width: 873px;
+  padding: 73px 305px 73px 116px;
+}
+
+.tabs-description-wrapper::after {
+  position: absolute;
+  content: "";
+  width: 136px;
+  height: 164px;
+  background-image: url("../images/decoration/delivery-icon.svg");
+  top: 77px;
+  right: 63px;
+}
+
+.tabs-item:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.service-title {
+  margin-bottom: 34px;
+}
+
+.service-description {
+  margin-bottom: 0;
+}
+
+.service-item {
+  display: none;
+}
+
+.service-item-active {
+  display: block;
+}
+
+.tabs-item-active {
+  background-color: #000000;
+  color: #efe17f;
+}
+
+.active-button {
+  background-color: #000000;
+  color: #efe17f;
+}
+
+.advantages-button {
+  padding: 9px 4px;
+}
+
+.delivery-form {
+  margin-bottom: 70px;
+}
+
+.delivery-form-wrapper {
+  position: relative;
+  background-color: #f0f0f0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.delivery-form-wrapper::before {
+  position: absolute;
+  content: "";
+  width: 125px;
+  height: 100px;
+  background-image: url("../images/decoration/truck-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 0;
+  background-color: #ffe17f;
+}
+
+.delivery-form-wrapper::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/decoration/form-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0 solid #dcdcdc80;
+  border-radius: 50%;
+  background-color: #dcdcdc80;
+  top: 30px;
+  right: 42px;
+}
+
+.button-delivery {
+  width: 1160px;
+  background-color: #f0f0f0;
+  padding: 39px 125px 38px 125px;
+}
+
+.delivery-feature {
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.details-about-us {
+  margin-bottom: 70px;
+}
+
+.details-container {
+  width: 1160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-title,
+.contacts-title {
+  margin-bottom: 48px;
+}
+
+.about-description,
+.contacts-description {
+  margin-bottom: 30px;
+}
+
+.about-us-wrapper,
+.contacts-wrapper {
+  position: relative;
+  padding: 47px 0 0 0;
+}
+
+.about-us-wrapper::before,
+.contacts-wrapper::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
+}
+
+.about-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.about-item::before {
+  position: absolute;
+  content: "";
+  background-color: #ffc700;
+  width: 8px;
+  height: 8px;
+  left: 0;
+  top: 6px;
+  border: 0 solid #ffc700;
+  border-radius: 50%;
+}
+
+.about-item {
+  position: relative;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #000000;
+  padding-left: 34px;
+}
+
+.about-item:not(:last-child) {
+  margin-bottom: 19px;
+}
+
+.contacts-subtitle {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+.shop-address {
+  font-weight: inherit;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.address,
+.phone {
+  margin: 0;
+  color: #444444;
+}
+
+.contacts-schedule {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 30px;
 }
