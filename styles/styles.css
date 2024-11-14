@@ -50,6 +50,11 @@ body {
   overflow: hidden;
 }
 
+.main-header {
+  position: relative;
+  z-index: 1;
+}
+
 .header-container {
   width: 1160px;
   margin: 0 auto;
@@ -134,7 +139,6 @@ body {
   text-align: center;
   cursor: pointer;
   border: none;
-  background-color: #ffe17f;
   font-family: "Raleway", "Arial" , sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -143,6 +147,12 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   text-decoration: none;
+  background: transparent;
+}
+
+.button-yellow {
+  padding: 10px 5px;
+  background-image: linear-gradient(transparent 40%, #ffe17f 40%, #ffe17f 58%, transparent 58%);
 }
 
 .navigation-button {
@@ -243,6 +253,7 @@ body {
 }
 
 .slider {
+  margin-top: -10px;
   margin-bottom: 70px;
 }
 
