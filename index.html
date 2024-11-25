@@ -21,7 +21,7 @@
           <form class="site-navigation" action="https://echo.htmlacademy.ru/" method="get">
             <label class="visually-hidden" for="navigation-search">Поиск по сайту</label>
             <input class="field" id="navigation-search" placeholder="Поиск по сайту" type="search" name="search">
-            <button class="button navigation-button" type="submit">Найти</button>
+            <button class="button navigation-button" type="submit"><span class="search-button">Найти</span></button>
           </form>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item login-item">
@@ -46,25 +46,75 @@
                   <path d="M15.3 5L11.8 5.2L8.6 0.3C8.5 0.1 8.2 0 8 0C7.8 0 7.5 0.1 7.4 0.3L4.2 5.2H0.7C0.3 5.2 0 5.5 0 5.9C0 6 0 6 0 6.1L1.9 12.9C2.1 13.6 2.6 14 3.3 14H12.7C13.4 14 13.9 13.6 14.1 12.9L16 6C16 5.9 16 5.9 16 5.8C16 5.4 15.7 5 15.3 5ZM8 1.9L10.2 5.1H5.9L8 1.9Z" />
                 </svg>
                 Корзина</a>
+              <div class="popover">
+                <div class="popover-content">
+                  <h2 class="visually-hidden">Корзина</h2>
+                  <ul class="cart-item-list">
+                    <li class="cart-item-popover">
+                      <img class="cart-item-product" src="../images/selfie-stick-one.jpg" width="39" height="43" alt="Любительская селфи-палка">
+                      <p class="cart-item-title">Любительская<br> селфи-палка</p>
+                      <button class="cart-item-button button" type="button">
+                        <svg width="10" height="11" viewBox="0 0 10 11" fill="white" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z" />
+                        </svg>
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                    <li class="cart-item-popover">
+                      <img class="cart-item-product" src="../images/selfie-stick-two.jpg" width="39" height="43" alt="Любительская селфи-палка">
+                      <p class="cart-item-title">Профессиональная<br> селфи-палка</p>
+                      <button class="cart-item-button button" type="button">
+                        <svg width="10" height="11" viewBox="0 0 10 11" fill="white" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z" />
+                        </svg>
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                    <li class="cart-item-popover cart-overall">
+                      <span class="cart-item-quantity">Товаров: 2</span>
+                      <span class="cart-item-price">Сумма: 2000 ₽</span>
+                    </li>
+                  </ul>
+                  <button class="button cart-button" type="button">Открыть корзину</button>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
-        <div class="catalog-container">
-          <button class="button catalog-button-preview" type="button">
-            <span class="catalog-button">Каталог товаров</span>
-          </button>
-          <ul class="navigation-list navigation-catalog">
-            <li class="catalog-item">
-              <a class="navigation-link" href="#">Доставка</a>
-            </li>
-            <li class="catalog-item">
-              <a class="navigation-link" href="#">Гарантия</a>
-            </li>
-            <li class="catalog-item">
-              <a class="navigation-link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="catalog navigation-list navigation-catalog">
+          <li class="catalog-item catalog-list-preview">
+            <a class="button catalog-button-preview">Каталог товаров</a>
+            <ul class="subcatalog">
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="catalog.html">Моноподы для cелфи</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="#">Экшн-камеры</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="#">Умные часы</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog-item">
+            <a class="navigation-link" href="#">Доставка</a>
+          </li>
+          <li class="catalog-item">
+            <a class="navigation-link" href="#">Гарантия</a>
+          </li>
+          <li class="catalog-item">
+            <a class="navigation-link" href="#">Контакты</a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -77,7 +127,7 @@
             <img class="slider-image" src="images/slider-1.png" width="560" height="560" alt="Квадрокоптер">
           </div>
           <div class="catalog-features">
-            <p class="item-advantage">Порхает как бабочка, жалит как пчела!</p>
+            <p class="item-advantage advantage-number-one">Порхает как бабочка, жалит как пчела!</p>
             <p class="item-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
               замаскированным под стандартную камеру.</p>
             <a class="button more-button button-yellow" href="#">Подробнее</a>
@@ -89,6 +139,46 @@
               <tr>
                 <th class="definition">Дальность полета</th>
                 <th class="definition">Радиус поражения</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="slider-item inactive-slider-item">
+          <div class="slider-product-image">
+            <img class="slider-image" src="images/slider-2.png" width="560" height="560" alt="Квадрокоптер">
+          </div>
+          <div class="catalog-features">
+            <p class="item-advantage advantage-number-two">Худеем<br> правильно!</p>
+            <p class="item-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <a class="button more-button button-yellow" href="#">Подробнее</a>
+            <table class="product-specification">
+              <tr>
+                <td class="description">48 часов</td>
+              </tr>
+              <tr>
+                <th class="definition">Без подзарядки</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="slider-item inactive-slider-item">
+          <div class="slider-product-image">
+            <img class="slider-image" src="images/slider-3.png" width="560" height="560" alt="Квадрокоптер">
+          </div>
+          <div class="catalog-features">
+            <p class="item-advantage advantage-number-three">Делай селфи,<br> как Бен Стиллер! </p>
+            <p class="item-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+            <a class="button more-button button-yellow" href="#">Подробнее</a>
+            <table class="product-specification">
+              <tr>
+                <td class="description">8,5 м</td>
+                <td class="description">5 кг</td>
+                <td class="description">Карбон</td>
+              </tr>
+              <tr>
+                <th class="definition">Длина палки</th>
+                <th class="definition">Вес палки</th>
+                <th class="definition">Материал</th>
               </tr>
             </table>
           </div>
