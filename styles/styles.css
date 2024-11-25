@@ -36,7 +36,7 @@ body {
   color: #444444;
   background-color: #ffffff;
   font-weight: 400;
-  min-width: 1440px;
+  min-width: 1300px;
 }
 
 .visually-hidden {
@@ -673,9 +673,9 @@ body {
 }
 
 .services-container {
-  width: 1440px;
+  width: 1300px;
   margin: 0 auto;
-  padding: 0 140px 72px 140px;
+  padding: 0 70px 72px 70px;
 }
 
 .services {
@@ -917,9 +917,10 @@ body {
 }
 
 .container-secondary {
-  width: 1440px;
+  width: 1300px;
   margin: 0 auto;
-  padding: 64px 141px 56px 141px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .newsletter-container {
@@ -991,11 +992,11 @@ body {
 .main-footer {
   background-color: #444444;
 }
-
+/*
 .footer-container {
   padding: 0;
 }
-
+*/
 .footer-primary {
   width: 1158px;
   margin: 0 auto;
