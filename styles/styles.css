@@ -1226,6 +1226,12 @@ body {
   padding: 62px 70px;
   background-color: #ffffff;
   border: 10px solid #000000;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.modal-container-close {
+  display: none;
 }
 
 .modal-delivery {
@@ -1247,6 +1253,14 @@ body {
   cursor: pointer;
 }
 
+.modal-close-button:hover {
+  opacity: 0.6;
+}
+
+.modal-close-button:active {
+  opacity: 0.3;
+}
+
 .modal-title {
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 50px;
@@ -1254,4 +1268,182 @@ body {
   font-weight: 800;
   margin: 0;
   color: #000000;
+  margin-bottom: 45px;
+}
+
+.delivery-label {
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 14px;
+  display: inline-block;
+}
+
+.delivery-form-field {
+  background-color: #f0f0f0;
+  color: rgba(0, 0, 0, 0.3);
+  padding: 20px 40px 20px 20px;
+  border: none;
+}
+
+.login-field {
+  width: 360px;
+}
+
+.email-input-wrapper .login-field {
+  color: #000000;
+  border: 2px solid #ff3d3d;
+}
+
+.email-input-wrapper {
+  position: relative;
+}
+
+.email-input-wrapper::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 12px;
+  background-image: url("../images/decoration/modal-login-email-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 62px;
+  right: 24px;
+}
+
+.product-field {
+  width: 540px;
+}
+
+.product-input-wrapper {
+  margin-right: 40px;
+}
+
+.field-group {
+  display: flex;
+  margin-bottom: 42px;
+}
+
+.name-input-wrapper {
+  margin-right: 40px;
+  position: relative;
+}
+
+.name-input-wrapper::after {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 12px;
+  background-image: url("../images/decoration/modal-login-field-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 60px;
+  right: 24px;
+}
+
+.error-message {
+  font-size: 14px;
+  line-height: 20px;
+  color: #ff3d3d;
+}
+
+.quantity-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.edit-quantity {
+  font: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  border: none;
+  width: 60px;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+  display: inline-block;
+  height: 60px;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.minus-button,
+.plus-button {
+  display: inline-flex;
+  width: 60px;
+  height: 60px;
+  padding: 22px 22px;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.form-button-wrapper {
+  display: flex;
+  width: 180px;
+}
+
+.form-submit-button {
+  padding: 10px 30px;
+}
+
+.quantity {
+  padding-right: 35px;
+  margin-right: 33px;
+}
+
+.tooltip-text {
+  display: block;
+  background-color: #000000;
+  color: #ffffff;
+  font: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  width: 200px;
+  padding: 19px 19px;
+  box-shadow: 0px 10px 0px 0px #0000001a;
+  position: absolute;
+  right: -32px;
+  top: 40px;
+  display: none;
+}
+
+.tooltip {
+  position: absolute;
+  left: 120px;
+  top: -3px;
+}
+
+.tooltip-button {
+  display: block;
+  border: none;
+  border-radius: 50%;
+  padding: 5px 12px;
+  background-color: #ffe17f;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.tooltip-button:hover + .tooltip-text,
+.tooltip-button:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text::after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 6px;
+  background-image: url("../images/decoration/tooltip-text-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: -5px;
+  left: 147px;
 }
