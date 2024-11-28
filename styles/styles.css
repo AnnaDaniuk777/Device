@@ -134,11 +134,6 @@ body {
   top: 12px;
 }
 
-/*Показать Кате*/
-.site-navigation .field:disabled {
-  fill-opacity: 0.3;
-}
-
 .field {
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
@@ -156,6 +151,10 @@ body {
 }
 
 .field:disabled {
+  opacity: 0.3;
+}
+
+.field:disabled + svg {
   opacity: 0.3;
 }
 
@@ -277,6 +276,11 @@ body {
   margin-left: 36px;
 }
 
+.cart-item:hover .popover,
+.cart-item:focus-within .popover {
+  display: block;
+}
+
 .navigation-item {
   position: relative;
 }
@@ -314,8 +318,9 @@ body {
 }
 
 .cart-item-link {
-  display: inline-block;
   display: flex;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .cart-item-popover {
@@ -338,8 +343,8 @@ body {
   opacity: 0.3;
 }
 
-.cart-item-link:focus {
-  border: 2px solid #af4fff;
+.cart-item-link:focus-visible {
+  outline: 2px solid #af4fff;
 }
 
 .cart-item-product {
@@ -351,7 +356,7 @@ body {
   margin: 0;
   font-size: 16px;
   line-height: 20px;
-  padding-right: 87px;
+  padding-right: 10px;
 }
 
 .cart-item-button {
@@ -359,6 +364,9 @@ body {
   top: 10px;
   right: 20px;
   display: inline-block;
+  padding: 0;
+  width: 14px;
+  height: 14px;
 }
 
 .cart-overall {
@@ -418,10 +426,6 @@ body {
   display: block;
 }
 
-.subcatalog {
-  display: none;
-}
-
 button:hover .subcatalog,
 button:active .subcatalog {
   display: block;
@@ -439,6 +443,7 @@ button:active .subcatalog {
 
 .catalog-list-preview {
   margin-right: auto;
+  position: relative;
 }
 
 .catalog-button-preview {
@@ -514,9 +519,17 @@ button:active .subcatalog {
 }
 
 .subcatalog-wrapper {
-  display: flex;
-  padding: 14px 0 60px 0;
+  display: none;
+  padding: 14px 60px 60px 60px;
   position: absolute;
+  background-color: #ffe17f;
+  width: 1160px;
+  left: -60px;
+  top: 100%;
+}
+
+.open-preview .subcatalog-wrapper {
+  display: flex;
 }
 
 .subcatalog-item {
@@ -732,6 +745,7 @@ button:active .subcatalog {
 
 .catalog-link {
   text-decoration: none;
+  display: block;
 }
 
 .catalog-link:hover .catalog-item-wrapper {
@@ -1249,6 +1263,7 @@ button:active .subcatalog {
 .footer-navigation:hover {
   color: #ffc700;
   border-bottom: 2px solid #ffc700;
+  opacity: 1;
 }
 
 .footer-navigation:active {

@@ -20,10 +20,10 @@
         <div class="navigation-wrapper">
           <form class="site-navigation" action="https://echo.htmlacademy.ru/" method="get">
             <label class="visually-hidden" for="navigation-search">Поиск по сайту</label>
+            <input class="field" id="navigation-search" placeholder="Поиск по сайту" type="search" name="search">
             <svg class="form-search-icon" width="16" height="16" viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg">
               <path d="M15.7 14.3L12.6 11.2C13.5 10 14 8.6 14 7C14 3.1 10.9 0 7 0C3.1 0 0 3.1 0 7C0 10.9 3.1 14 7 14C8.6 14 10 13.5 11.2 12.6L14.3 15.7C14.5 15.9 14.7 16 15 16C15.6 16 16 15.6 16 15C16 14.8 15.9 14.5 15.7 14.3ZM2 7C2 4.2 4.2 2 7 2C9.8 2 12 4.2 12 7C12 9.8 9.8 12 7 12C4.2 12 2 9.8 2 7Z" />
             </svg>
-            <input class="field" id="navigation-search" placeholder="Поиск по сайту" type="search" name="search">
             <button class="button navigation-button" type="submit"><span class="search-button">Найти</span></button>
           </form>
           <ul class="navigation-list navigation-user">
@@ -54,7 +54,7 @@
                   <h2 class="visually-hidden">Корзина</h2>
                   <ul class="cart-item-list">
                     <li class="cart-item-popover">
-                      <a class="cart-item-link">
+                      <a class="cart-item-link" href="#">
                         <img class="cart-item-product" src="../images/selfie-stick-one.jpg" width="39" height="43" alt="Любительская селфи-палка">
                         <p class="cart-item-title">Любительская<br> селфи-палка</p>
                       </a>
@@ -66,7 +66,7 @@
                       </button>
                     </li>
                     <li class="cart-item-popover">
-                      <a class="cart-item-link">
+                      <a class="cart-item-link" href="#">
                         <img class="cart-item-product" src="../images/selfie-stick-two.jpg" width="39" height="43" alt="Любительская селфи-палка">
                         <p class="cart-item-title">Профессиональная<br> селфи-палка</p>
                       </a>
@@ -89,9 +89,9 @@
           </ul>
         </div>
         <ul class="catalog navigation-list navigation-catalog">
-          <li class="catalog-item catalog-list-preview">
+          <li class="catalog-item catalog-list-preview open-preview">
             <a class="button catalog-button-preview catalog-show-more">Каталог товаров</a>
-            <div class="subcatalog-wrapper subcatalog-close">
+            <div class="subcatalog-wrapper">
               <ul class="subcatalog subcatalog-main">
                 <li class="subcatalog-item">
                   <a class="subcatalog-link" href="#">Виртуальная реальность</a>
