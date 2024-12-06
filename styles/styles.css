@@ -1707,6 +1707,7 @@ button:active .subcatalog {
   width: 100%;
   justify-content: space-between;
   padding: 20px 40px;
+  align-items: center;
 }
 
 .catalog-filter-group-wrapper {
@@ -1821,4 +1822,107 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
 
+.control-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #cccccc;
+  border-radius: 3px;
+  left: 16px;
+  top: 5px;
+}
+
+.control-label {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.control-input {
+  appearance: none;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-image: url("../images/decoration/checkbox-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 3px;
+  left: 3px;
+}
+
+.control-input[type="checkbox"]:checked +.control-mark {
+  border: 2px solid #000000;
+  border-radius: 3px;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+}
+
+.control-input[type="radio"]:checked + .control-mark {
+  border-color: #000000;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.form-button {
+  padding: 10px 55px;
+}
+
+.sorting-container .filter {
+  margin: 0;
+}
+
+.moving-button {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.select-control {
+  min-width: 141px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border: none;
+  -moz-border: none;
+  border: none;
+  font: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  background-image: url("../images/decoration/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+}
