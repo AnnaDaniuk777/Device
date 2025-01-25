@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <title>Онлайн-магазин "Девайс"</title>
 </head>
 
@@ -20,11 +21,15 @@
         <div class="navigation-wrapper">
           <form class="site-navigation" action="https://echo.htmlacademy.ru/" method="get">
             <label class="visually-hidden" for="navigation-search">Поиск по сайту</label>
-            <input class="field" id="navigation-search" placeholder="Поиск по сайту" type="search" name="search">
+            <div class="field-wrapper">
+              <input class="field" id="navigation-search" placeholder="Поиск по сайту" type="search" name="search">
+            </div>
             <svg class="form-search-icon" width="16" height="16" viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg">
               <path d="M15.7 14.3L12.6 11.2C13.5 10 14 8.6 14 7C14 3.1 10.9 0 7 0C3.1 0 0 3.1 0 7C0 10.9 3.1 14 7 14C8.6 14 10 13.5 11.2 12.6L14.3 15.7C14.5 15.9 14.7 16 15 16C15.6 16 16 15.6 16 15C16 14.8 15.9 14.5 15.7 14.3ZM2 7C2 4.2 4.2 2 7 2C9.8 2 12 4.2 12 7C12 9.8 9.8 12 7 12C4.2 12 2 9.8 2 7Z" />
             </svg>
-            <button class="button navigation-button" type="submit"><span class="search-button">Найти</span></button>
+            <div class="navigation-button-wrapper">
+              <button class="button navigation-button" type="submit"><span class="search-button">Найти</span></button>
+            </div>
           </form>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item login-item">
@@ -59,7 +64,7 @@
                         <p class="cart-item-title">Любительская<br> селфи-палка</p>
                       </a>
                       <button class="cart-item-button button" type="button">
-                        <svg width="10" height="11" viewBox="0 0 10 11" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="icon-button" width="10" height="10" viewBox="0 0 10 11" fill="white" xmlns="http://www.w3.org/2000/svg">
                           <path d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z" />
                         </svg>
                         <span class="visually-hidden">Удалить из корзины</span>
@@ -71,7 +76,7 @@
                         <p class="cart-item-title">Профессиональная<br> селфи-палка</p>
                       </a>
                       <button class="cart-item-button button" type="button">
-                        <svg width="10" height="11" viewBox="0 0 10 11" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="icon-button" width="10" height="10" viewBox="0 0 10 11" fill="white" xmlns="http://www.w3.org/2000/svg">
                           <path d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z" />
                         </svg>
                         <span class="visually-hidden">Удалить из корзины</span>
@@ -548,6 +553,7 @@
       </section>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
