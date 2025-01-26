@@ -1,14 +1,10 @@
-let openButton = document.querySelector('.open-preview');
-let catalogList = document.querySelector('.subcatalog-wrapper');
+let catalogToggle = document.querySelector('.catalog-button-preview');
+let catalogMain = document.querySelector('.subcatalog-wrapper');
 
-catalogList.classList.add('subcatalog-close');
+catalogMain.classList.add('subcatalog-close');
+catalogToggle.classList.add('submenu-closed');
 
-openButton.addEventListener('click', () => {
-  if (catalogList.classList.contains('subcatalog-close')) {
-    catalogList.classList.remove('subcatalog-close');
-    catalogList.classList.add('subcatalog-open');
-  } else {
-    catalogList.classList.remove('subcatalog-open');
-    catalogList.classList.add('subcatalog-close');
-  }
+catalogToggle.addEventListener('click', () => {
+  catalogMain.classList.toggle('subcatalog-close');
+  catalogToggle.classList.toggle('submenu-closed');
 });

@@ -95,7 +95,7 @@
         </div>
         <ul class="catalog navigation-list navigation-catalog">
           <li class="catalog-item catalog-list-preview open-preview">
-            <a class="button catalog-button-preview catalog-show-more" href="#">Каталог товаров</a>
+            <a class="button catalog-button-preview" href="#">Каталог товаров</a>
             <div class="subcatalog-wrapper">
               <ul class="subcatalog subcatalog-main">
                 <li class="subcatalog-item">
@@ -160,7 +160,7 @@
             </table>
           </div>
         </div>
-        <div class="slider-item">
+        <div class="slider-item slider-item-active">
           <div class="slider-product-image">
             <img class="slider-image" src="images/slider-2.png" width="560" height="560" alt="Квадрокоптер">
           </div>
@@ -173,12 +173,12 @@
                 <td class="description">48 часов</td>
               </tr>
               <tr>
-                <th class="definition">Без подзарядки</th>
+                <th class="definition definition-watches">Без подзарядки</th>
               </tr>
             </table>
           </div>
         </div>
-        <div class="slider-item">
+        <div class="slider-item slider-item-active">
           <div class="slider-product-image">
             <img class="slider-image" src="images/slider-3.png" width="560" height="560" alt="Квадрокоптер">
           </div>
@@ -504,10 +504,11 @@
       <section class="modal-content">
         <h2 class="modal-title">Доставка под заказ</h2>
         <form class="delivery-form-modal" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="field-group">
+          <div class="field-group login-field-group">
             <div class="name-input-wrapper">
               <label class="name delivery-label" for="login-name">Ваше имя:</label>
               <input class="delivery-form-field login-field login-field-name" type="text" id="login-name" name="auth-name" placeholder="Введите имя" required>
+              <span class="info-message">Добавьте имя</span>
             </div>
             <div class="email-input-wrapper">
               <label class="email delivery-label" for="email">Ваш e-mail:</label>

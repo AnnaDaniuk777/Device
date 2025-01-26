@@ -197,7 +197,7 @@ body {
   display: none;
 }
 
-.field-wrapper.field-wrapper::after .field:focus {
+.field-wrapper:focus-within::after {
   display: block;
 }
 
@@ -298,7 +298,7 @@ body {
   opacity: 0.3;
 }
 
-.navigation-button-wrapper.navigation-button-wrapper::after .navigation-button:focus {
+.navigation-button-wrapper:focus-within::after {
   display: block;
 }
 
@@ -561,7 +561,28 @@ button:active .subcatalog {
   padding-bottom: 15px;
 }
 
-.catalog-button-preview::before {
+.catalog-button-preview::after {
+  position: absolute;
+  content: "";
+  background-image: url("../images/decoration/catalog-button-icon-minus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  color: #000000;
+  opacity: 0.3;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+.submenu-closed::after {
+  background-image: url("../images/decoration/catalog-button-icon.svg");
+}
+
+/* .catalog-button-preview::before {
   position: absolute;
   content: "";
   background-image: url("../images/decoration/catalog-button-icon.svg");
@@ -610,7 +631,7 @@ button:active .subcatalog {
 .button:active.catalog-show-more::after {
   opacity: 1;
   display: block;
-}
+} */
 
 .catalog-list-preview .catalog-button-preview:focus {
   outline: 2px solid #af4fff;
@@ -1565,7 +1586,7 @@ button:active .subcatalog {
   font-weight: 800;
   margin: 0;
   color: #000000;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 .delivery-label {
@@ -1576,15 +1597,21 @@ button:active .subcatalog {
   text-align: left;
   font-weight: 700;
   color: #000000;
+  padding: 0;
+  margin: 0;
   margin-bottom: 14px;
-  display: inline-block;
+  display: block;
 }
 
 .delivery-form-field {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Rubik", "Arial", sans-serif;
   background-color: #f0f0f0;
   color: rgba(0, 0, 0, 0.3);
-  padding: 20px 40px 20px 20px;
+  padding: 5px 40px 5px 20px;
   border: none;
+  height: 60px;
 }
 
 .login-field {
@@ -1619,8 +1646,8 @@ button:active .subcatalog {
   background-image: url("../images/decoration/modal-login-email-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
-  top: 62px;
-  right: 24px;
+  top: 57px;
+  right: 19px;
 }
 
 .product-field {
@@ -1650,8 +1677,14 @@ button:active .subcatalog {
   background-image: url("../images/decoration/modal-login-field-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
-  top: 60px;
-  right: 24px;
+  top: 57px;
+  right: 20px;
+}
+
+.info-message {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
 }
 
 .error-message {
@@ -2008,16 +2041,12 @@ button:active .subcatalog {
   position: relative;
 }
 
-.wrapper-label-range-min::after {
+.wrapper-label-range-min:focus-within::after {
   content: "";
   position: absolute;
   width: 71px;
   height: 100%;
   border: 2px solid #af4fff;
-  display: none;
-}
-
-.wrapper-label-range-min::after .catalog-filter-input:focus {
   display: block;
 }
 
