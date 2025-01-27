@@ -55,6 +55,11 @@ body {
   overflow: hidden;
 }
 
+tr,
+th {
+  text-align: left;
+}
+
 .main-index {
   flex-grow: 1;
 }
@@ -110,7 +115,6 @@ body {
 
 .navigation-link-login {
   opacity: 0.3;
-  margin-left: 28px;
 }
 
 .catalog-item .navigation-link {
@@ -182,6 +186,10 @@ body {
 .field-wrapper {
   display: block;
   position: relative;
+}
+
+.delivery-form-field.field-error {
+  border: 2px solid #ff3d3d;
 }
 
 .field-wrapper::after {
@@ -319,13 +327,18 @@ body {
   width: 497px;
 }
 
-.login-item {
+.navigation-item:not(:last-child) {
   margin-right: auto;
+}
+
+.navigation-item.stats-item {
+  margin-right: 12px;
 }
 
 .cart-link {
   position: relative;
   display: block;
+  padding-left: 45px;
 }
 
 .navigation-icon {
@@ -342,7 +355,7 @@ body {
   padding: 2px 7px;
   display: inline-block;
   position: absolute;
-  left: -43px;
+  left: 0;
   top: 15%;
   z-index: 12;
 }
@@ -358,14 +371,10 @@ body {
   padding-right: 5px;
 }
 
-.cart-item {
-  padding-left: 55px;
-}
-
 .cart-icon {
   position: absolute;
   top: 6px;
-  left: -26px;
+  left: 19px;
 
 }
 
@@ -582,57 +591,6 @@ button:active .subcatalog {
   background-image: url("../images/decoration/catalog-button-icon.svg");
 }
 
-/* .catalog-button-preview::before {
-  position: absolute;
-  content: "";
-  background-image: url("../images/decoration/catalog-button-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 50px;
-  height: 50px;
-  border: 2px solid #000000;
-  border-radius: 50%;
-  color: #000000;
-  opacity: 0.3;
-  right: 0;
-  bottom: 0;
-}
-
-.catalog-show-more::after {
-  position: absolute;
-  content: "";
-  background-image: url("../images/decoration/catalog-button-icon-minus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 50px;
-  height: 50px;
-  border: 2px solid #000000;
-  border-radius: 50%;
-  color: #000000;
-  opacity: 0.3;
-  right: 0;
-  bottom: 0;
-  display: none;
-}
-
-.button:hover.catalog-button-preview::before {
-  opacity: 1;
-}
-
-.button:active.catalog-button-preview::before {
-  opacity: 1;
-  display: none;
-}
-
-.button:hover.catalog-show-more::after {
-  opacity: 1;
-}
-
-.button:active.catalog-show-more::after {
-  opacity: 1;
-  display: block;
-} */
-
 .catalog-list-preview .catalog-button-preview:focus {
   outline: 2px solid #af4fff;
 }
@@ -672,7 +630,7 @@ button:active .subcatalog {
   display: flex;
   padding: 14px 60px 60px 60px;
   position: absolute;
-  background-image: linear-gradient(transparent -24px, #ffe17f 20px);
+  background-image: linear-gradient(transparent 5px, #ffe17f 5px);
   width: 1160px;
   left: -60px;
   top: 100%;
@@ -1579,6 +1537,10 @@ button:active .subcatalog {
   opacity: 0.3;
 }
 
+.modal-close-button:focus {
+  outline: 2px solid #af4fff;
+}
+
 .modal-title {
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 50px;
@@ -1608,10 +1570,15 @@ button:active .subcatalog {
   line-height: 20px;
   font-family: "Rubik", "Arial", sans-serif;
   background-color: #f0f0f0;
-  color: rgba(0, 0, 0, 0.3);
   padding: 5px 40px 5px 20px;
   border: none;
   height: 60px;
+  display: block;
+  color: #000000;
+}
+
+.delivery-form-field:focus {
+  outline: 2px solid #af4fff;
 }
 
 .login-field {
@@ -1623,15 +1590,18 @@ button:active .subcatalog {
   background-color: #dcdcdc;
 }
 
+.delivery-form-field:disabled,
 .login-field:disabled,
 .product-field:disabled {
   opacity: 0.3;
   fill-opacity: 0.3;
+  color: #000000;
+  background-color: #f0f0f0;
+  fill: #b3b3b3;
 }
 
 .email-input-wrapper .login-field {
   color: #000000;
-  border: 2px solid #ff3d3d;
 }
 
 .email-input-wrapper {
@@ -1660,7 +1630,7 @@ button:active .subcatalog {
 
 .field-group {
   display: flex;
-  margin-bottom: 42px;
+  margin-bottom: 43px;
   width: 760px;
 }
 
@@ -1691,6 +1661,7 @@ button:active .subcatalog {
   font-size: 14px;
   line-height: 20px;
   color: #ff3d3d;
+  display: block;
 }
 
 .quantity-button-wrapper {
@@ -1745,6 +1716,19 @@ button:active .subcatalog {
 .form-button-wrapper {
   display: flex;
   width: 180px;
+  position: relative;
+}
+
+.form-button-wrapper.button-error::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 180px;
+  height: 60px;
+  outline: 2px solid #ff3d3d;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .form-submit-button {
@@ -1758,6 +1742,7 @@ button:active .subcatalog {
 
 .tooltip-text {
   display: block;
+  position: absolute;
   background-color: #000000;
   color: #ffffff;
   font: inherit;
@@ -1770,6 +1755,7 @@ button:active .subcatalog {
   right: -32px;
   top: 40px;
   display: none;
+  z-index: 10;
 }
 
 .tooltip {
@@ -2022,8 +2008,7 @@ button:active .subcatalog {
 
 .range-wrapper-inputs {
   display: flex;
-  justify-content: space-between;
-  gap: 47px;
+  gap: 36px;
   width: 168px;
   margin-left: -15px;
 }
@@ -2052,17 +2037,16 @@ button:active .subcatalog {
 
 .wrapper-label-range-max {
   display: flex;
-  margin-left: -11px;
   position: relative;
 }
 
-.wrapper-label-range-max::after {
+.wrapper-label-range-max:focus-within::after {
   content: "";
   position: absolute;
   width: 71px;
   height: 100%;
   border: 2px solid #af4fff;
-  display: none;
+  display: block;
 }
 
 .catalog-filter-input {
