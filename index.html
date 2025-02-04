@@ -21,15 +21,11 @@
         <div class="navigation-wrapper">
           <form class="site-navigation" action="https://echo.htmlacademy.ru/" method="get">
             <label class="visually-hidden" for="navigation-search">Поиск по сайту</label>
-            <div class="field-wrapper">
-              <input class="field" id="navigation-search" placeholder="Поиск по сайту" type="search" name="search">
-            </div>
+            <input class="field" id="navigation-search" placeholder="Поиск по сайту" type="search" name="search">
             <svg class="form-search-icon" width="16" height="16" viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg">
               <path d="M15.7 14.3L12.6 11.2C13.5 10 14 8.6 14 7C14 3.1 10.9 0 7 0C3.1 0 0 3.1 0 7C0 10.9 3.1 14 7 14C8.6 14 10 13.5 11.2 12.6L14.3 15.7C14.5 15.9 14.7 16 15 16C15.6 16 16 15.6 16 15C16 14.8 15.9 14.5 15.7 14.3ZM2 7C2 4.2 4.2 2 7 2C9.8 2 12 4.2 12 7C12 9.8 9.8 12 7 12C4.2 12 2 9.8 2 7Z" />
             </svg>
-            <div class="navigation-button-wrapper">
-              <button class="button navigation-button" type="submit"><span class="search-button">Найти</span></button>
-            </div>
+            <button class="button navigation-button" type="submit"><span class="search-button">Найти</span></button>
           </form>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item login-item">
@@ -87,7 +83,7 @@
                       <span class="cart-item-price">Сумма: 2000 ₽</span>
                     </li>
                   </ul>
-                  <button class="button cart-button" type="button">Открыть корзину</button>
+                  <a class="button cart-button">Открыть корзину</a>
                 </div>
               </div>
             </li>
@@ -498,7 +494,7 @@
   </footer>
   <div class="modal-container modal-container-close">
     <div class="modal modal-delivery">
-      <button class="modal-close-button">
+      <button class="modal-close-button" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
@@ -518,7 +514,7 @@
           <div class="field-group delivery-field-options">
             <div class="product-input-wrapper">
               <label class="product delivery-label" for="product">Что нужно привезти:</label>
-              <input class="delivery-form-field product-field" type="text" id="product" placeholder="В свободной форме" required>
+              <input class="delivery-form-field product-field" type="text" id="product" name="what-to-deliver" placeholder="В свободной форме" required>
             </div>
             <div class="quantity-button-wrapper">
               <label class="quantity delivery-label" for="quantity">Количество:</label>
