@@ -1272,12 +1272,13 @@ body {
 .newsletter-form {
   width: 810px;
   display: flex;
+  align-items: flex-start;
   margin-right: 10px;
 }
 
 .newsletter-email {
   width: 557px;
-  padding: 14px 16px 14px 16px;
+  padding: 13px 16px 11px 16px;
   border: none;
   background-color: #f0f0f0;
   border-bottom: 3px solid #c4c4c4;
@@ -1294,11 +1295,12 @@ body {
 
 .newsletter-email:focus {
   outline: 2px solid #af4fff;
+  background-color: #dcdcdc;
 }
 
 .newsletter-button {
   width: 253px;
-  padding: 18px 18px;
+  padding: 15px 38px;
   background-color: transparent;
   border: 3px solid #c4c4c4;
 }
