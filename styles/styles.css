@@ -153,10 +153,12 @@ body {
   width: 517px;
   position: relative;
 }
+
 .form-search-icon {
   position: absolute;
   left: 16px;
-  top: 14px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .field {
@@ -227,7 +229,7 @@ body {
 }
 
 .button-yellow {
-  background-image: linear-gradient(transparent 17px, #ffe17f 17px, #ffe17f 25px, transparent 25px);
+  background-image: linear-gradient(transparent calc((100% - 8px) / 2), #ffe17f calc((100% - 8px) / 2), #ffe17f calc((100% - 8px) / 2 + 8px), transparent calc((100% - 8px) / 2 + 8px));
   transition: 0.3s;
 }
 
@@ -958,7 +960,6 @@ body {
 
 .service-description {
   margin-bottom: 0;
-  padding-right: 242px;
 }
 
 .service-item {
@@ -971,7 +972,7 @@ body {
 }
 
 .service-delivery {
-  padding: 72px 63px 72px 116px;
+  padding: 72px 210px 72px 116px;
 }
 
 .service-item.service-delivery::after {
@@ -985,7 +986,7 @@ body {
 }
 
 .service-guarantee {
-  padding: 72px 28px 62px 116px;
+  padding: 72px 210px 62px 116px;
 }
 
 .service-item.service-guarantee::after {
@@ -999,7 +1000,7 @@ body {
 }
 
 .service-credit {
-  padding: 65px 28px 65px 116px;
+  padding: 65px 210px 65px 116px;
 }
 
 .service-item.service-credit::after {
@@ -1050,13 +1051,12 @@ body {
   position: absolute;
   content: "";
   width: 125px;
-  height: 100px;
+  height: 100%;
   background-image: url("../images/decoration/truck-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
   background-size: 47px 31px;
   background-color: #ffe17f;
 }
@@ -2209,7 +2209,8 @@ input[type=number] {
 }
 
 .select-control {
-  min-width: 141px;
+  max-width: 250px;
+  padding-right: 30px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
